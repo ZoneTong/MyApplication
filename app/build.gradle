@@ -10,6 +10,16 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        sourceSets{
+            main{
+                assets{
+                    srcDirs = ['build/intermediates/ndkBuild/debug/obj/local']
+                }
+            }
+        }
+    }
+    aaptOptions {
+        ignoreAssetsPattern '!*.txt:!*.so:!*debug:!*release:!*.a'
     }
     externalNativeBuild {
         ndkBuild {
