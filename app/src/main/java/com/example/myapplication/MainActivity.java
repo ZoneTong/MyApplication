@@ -53,7 +53,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void bt3_click(View view){
         c = c+1;
-        textview1.setText("click:"+c+"\n"+callElf("hello"));
+//        textview1.setText("click:"+c+"\n"+callElf("hello"));
+
+        textview1.setText("click:"+c+"\n"+callElf("md5 testString"));
     }
 
     public String callElf(String cmd){

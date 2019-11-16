@@ -21,7 +21,7 @@ public class CopyElfs {
     List resList;
     String cpuType;
     String[] assetsFiles={
-            "hello"
+            "hello", "md5"
     };
 
     CopyElfs(Context c){
