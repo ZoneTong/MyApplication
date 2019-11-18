@@ -41,6 +41,6 @@ int main(int argc, char **argv){
     }
     char md5str[33];
     openssl_md5(argv[1],strlen(argv[1]),md5str);
-    printf("%s\n",md5str);
+    printf("zht ro 23  %s\n",md5str);
     return 0;
 }

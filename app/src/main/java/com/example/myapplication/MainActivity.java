@@ -17,6 +17,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 
+// https://www.cnblogs.com/andrewwang/p/11024891.html
 public class MainActivity extends AppCompatActivity {
     String TAG="Main_Debug:";
     TextView textview1;
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 //        textview1.setText("click:"+c+"\n"+callElf("hello"));
 
         textview1.setText("click:"+c+"\n"+callElf("md5 testString"));
+//        textview1.setText("click:"+c+"\n"+ YunxingLib.runYunxingFromJNI());
     }
 
     public String callElf(String cmd){
@@ -74,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return execResult;
     }
-
 
 
 

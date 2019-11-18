@@ -15,8 +15,13 @@ android {
                 assets{
                     srcDirs = ['build/intermediates/ndkBuild/debug/obj/local']
                 }
+                jniLibs.srcDirs = ['libs']
+//                jni.srcDirs = []
             }
         }
+//        ndk {
+//            abiFilters "armeabi-v7a"
+//        }
     }
     aaptOptions {
         ignoreAssetsPattern '!*.txt:!*.so:!*debug:!*release:!*.a'
@@ -24,6 +29,7 @@ android {
     externalNativeBuild {
         ndkBuild {
             path "src/main/jni/Android.mk"
+
         }
     }
     buildTypes {
